@@ -6,7 +6,7 @@ const plateSchema = new mongoose.Schema({
   },
   Phone:{
     type:String,
-    required:true
+   
   }
 },
   {
