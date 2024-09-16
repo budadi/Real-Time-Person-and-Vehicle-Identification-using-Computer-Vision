@@ -9,7 +9,7 @@ from datetime import datetime
 
 
 
-client=MongoClient('mongodb+srv://shreyas:shreyas@cluster0.7sqc1vd.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://varun898080:123@cluster0.1gxfd.mongodb.net/?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE')
 name=""
 phone=""
 db=client['test']
@@ -30,9 +30,9 @@ def getImage():
 getImage()
 
 
-# cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 # cap = cv2.VideoCapture("simps.jpg")
-cap = cv2.VideoCapture("rtsp://192.168.62.89:8080/h264_ulaw.sdp")
+#cap = cv2.VideoCapture("rtsp://192.168.62.89:8080/h264_ulaw.sdp")
 
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
